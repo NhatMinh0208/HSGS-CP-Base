@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "8ad416bd621187aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bd35753ba57eed1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Problem/PA/PA2015/(PA2015) SIL.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e4fd33668f9c1f55",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c30eeb9d9b1b900",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6cc25828dec8d00",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "3efa7aea4b32c97d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2f4edb53e1ce6fc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf5abf5daa1424ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d426a80a674cb6c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Problem/PA/PA2015/(PA2015) SIL.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3bd35753ba57eed1",
+  "lastOpenFiles": [
+    "Problem/PA/PA2015/(PA2015) SIL.md",
+    "Techniques/Chu kỳ Pisano.md",
+    "Topics/Dijkstra.md",
+    "Problem/PA/PA2015/(PA2015) EKS.md"
+  ]
+}
