@@ -1,0 +1,2 @@
+# Brute force
+*Brute force*, hay còn gọi là "chạy trâu", là kỹ thuật giải đơn giản nhất trong các bài toán về thuật toán. Trong *brute force*, chúng ta chạy lần lượt qua tất cả các trường hợp có thể xảy ra để tìm được lời giải của bài toán.
