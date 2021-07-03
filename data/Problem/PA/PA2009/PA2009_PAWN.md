@@ -1,0 +1,3 @@
+Problem: Given 3 numbers $n\leq 10000$, $m\leq 1000000$, $p\leq 1000$. We have a $n\times n$ boards and $m$ lines indicate a black segment on line $w[i]$ from $l[i]$ to $r[i]$. We can reach a square to another square if it is adjacent by edge or angle (8 adjacent squares) and have the same color. We need to answer $p$ queries to see if it is possible to reach $x2,y2$ from $x1,y1$.
+Solution: We can maintain a set of black segments on each columns. Basically, we can see each segment as a vertex and for two adjacent lines to connect the graph. We simply do a [[dfs]], and for each queries check if these two nodes are on the same component.
+Complexity: $O(mlogm)$, but very likely less as we have many columns
