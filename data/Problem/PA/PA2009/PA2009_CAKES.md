@@ -1,8 +1,8 @@
-A graph with n vertices and m edges $(n\leq100000,m\leq250000)$. Each vertex has a value $p[i]$. Find all 3 vertices that pairwise connect with each other, and add the max $p[i]$ among 3 vertices to the answer. Find the answer?
+Đồ thị n đỉnh m cạnh $(n\leq100000,m\leq250000)$. Mỗi đỉnh có 1 giá trị $p[i]$. Với bộ 3 đỉnh đôi một nối với nhau tạo thành tam giác, ta cộng max $p[i]$ trong 3 đỉnh vào answer. Tìm answer?
 
-Sol: This problem is one of the example of [[sqrt decomposition]], this can be often found in problem when you are required to find a group of objects, with connections to others (like graphs), and can find a way to optimize from $O(n^2)$, to $O(nlogn)$ or so. You can divide the objects into 2 groups like this problem.
-Group 1: $degree(u)>\sqrt m$ 
-Iterate through all edges and check if these edges connect with u.
+Sol: Bài này chúng ta sẽ dùng [[sqrt decomposition]], một cách làm thường thấy ở những bài cần biết quan hệ giữa 1 số đối tượng trong 1 nhóm (như graph) và rất khó để optimize từ $O(n^2)$ xuống $O(nlogn)$ hay 1 số đpt tương tự. Có thể chia thành 2 nhóm như sau
+Nhóm 1: $degree(u)>\sqrt m$ 
+Iterate qua tất cả các cạnh xem 2 đỉnh có nối với u không. 
 Group 2: $degree(u)<\sqrt m$
-Iterate through each pair of all adjacent vertices to see if there exists an edge between them.
-Complexity: $O(n\sqrt n logn)$ ($logn$ to store edges in set)
+Chạy qua tất cả các cặp đỉnh kề, và xem có cạnh nối chúng không.
+Complexity: $O(n\sqrt n)$ 
