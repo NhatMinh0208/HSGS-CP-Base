@@ -17,4 +17,4 @@ Một từ s được tạo thành từ (2n + n -1) các ký tự 0 và 1 đư�
 	+ Nếu như phần còn lại của xâu s sau khi thực hiện thao tác không rỗng, ta chỉ cần thêm bit không xuất hiện trong đó để tạo thành nhóm thứ k + 1. Ví dụ xâu 001010101111000 có phần còn lại là 00, ta thêm bit 1 vào cuối xâu để tạo thành nhóm mới. Với các nhóm từ k + 2 đến n ta thêm 01 vào xâu để tạo thành nhóm mới.
 	+ Nếu phần còn lại rỗng, với các nhóm từ k + 1 đến n ta thêm 01 vào tạo nhóm mới.
 **ĐPT**: O(m)
-Link: [[Greedy]][[(ARC 081) C]]
+Link: [[Greedy]][[(ARC081) C]]
