@@ -11,4 +11,4 @@ $$\begin{matrix} *1 & *5 & 3 & 1 & 5 \\ 4 & 2 & *2 & *4 & *3 \end{matrix}$$
  - Coi các số ghi trong bảng là đỉnh và nối cạnh giữa hai số ghi trong hai ô cùng cột, ta thu được một đồ thị gồm các cycle (do mỗi số xuất hiện ở hai ô không cùng cột, nên nó kề với hai cạnh). Nếu ta tô ô có chứa số i bằng một màu, ta cũng đã quy định màu cho tất cả các ô có đỉnh tương ứng nằm cùng cycle với i. Như vậy mỗi cycle chỉ có 2 cách tô màu.
  - Vậy đáp án là $2 ^ {số cycle}$
 **ĐPT**: O(n)
- 
+Link: [[Permutation]][[Graph]]

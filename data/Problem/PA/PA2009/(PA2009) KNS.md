@@ -15,5 +15,6 @@ Cờ Bytean là một loại cờ khác thường nhất thế giới. Mỗi vá
 			$$\{c \in Z | c = ax + by với a, b \in Z\} = \{k * gcd(x, y) với k \in Z\}$$ 
 	(xem [[Diophantine equation]] để biết thêm). 
 - Như vậy từ các nước đi đôi có thể tạo được các nước đi có dạng $(a * gcd(2n, 2k), b * gcd(2n, 2k))$ với $a, b \in Z$.
-- Vì mỗi nước đi đơn xuất hiện tối ta chỉ cần thử tất cả các [[Bitmask]] thể hiện số lần xuất hiện của các nước đi đơn. Nếu sau khi cộng các nước đi đơn vào $(x_1, y_1)$ , $x_2 - x_1$ và $y_2 - y_1$ đều chia hết cho $(2n, 2k)$, ta in ra "YES".
+- Vì mỗi nước đi đơn xuất hiện tối ta chỉ cần thử tất cả các mask thể hiện số lần xuất hiện của các nước đi đơn. Nếu sau khi cộng các nước đi đơn vào $(x_1, y_1)$ , $x_2 - x_1$ và $y_2 - y_1$ đều chia hết cho $(2n, 2k)$, ta in ra "YES".
 **Độ phức tạp**: $T * (2^8 + log2(1e9))$
+Link: [[Diophantine equation]], [[Number theory]], [[Bitmask]], (Basis?)

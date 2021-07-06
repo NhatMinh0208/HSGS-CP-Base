@@ -1,6 +1,6 @@
 # Type Two de Bruijn Sequences (deb)
 **Đề bài**
-Một từ s được tạo thành từ (2n + n -1) các ký tự 0 và 1 được gọi là dãy Bruijn bậc n nếu tất cả các từ n ký tự được tạo ra từ các số 0 và 1 là từ con của nó – tức là một đoạn của các ký tự liên tiếp của s. Một ví dụ về dãy Bruijn bậc 3 đó là 0001011100. Một dãy Bruijn típ 2 bậc n là một từ s có độ dài bất kỳ mà mỗi từ n ký tự được tạo ra bởi các số 0 và 1 là một dãy con – tức là một đoạn, không cần các ký tự phải liên tiếp nhau, của s. Một ví dụ về dãy Bruijn típ 2 bậc 3 là 00101101. Như ta đã biết, Nicolaas Govert de Bruijn đã không phát minh ra những dãy như thế nhưng định nghĩa của chúng lại tương tự với định nghĩa phía trên. Xét một từ s được tạo thành từ các ký tự 0 và 1. Có bao nhiêu con số (0 hoặc 1) phải thêm vào cuối của từ s để từ này trở thành một dãy Bruijn tip 2 bậc n?
+Một dãy Bruijn típ 2 bậc n là một từ s có độ dài bất kỳ mà mỗi từ n ký tự được tạo ra bởi các số 0 và 1 là một dãy con – tức là một đoạn, không cần các ký tự phải liên tiếp nhau, của s. Một ví dụ về dãy Bruijn típ 2 bậc 3 là 00101101. Xét một từ s được tạo thành từ các ký tự 0 và 1. Có bao nhiêu con số (0 hoặc 1) phải thêm vào cuối của từ s để từ này trở thành một dãy Bruijn tip 2 bậc n?
 **Giới hạn**
 1 ≤ m, n ≤ 1.000.000
 **Lời giải**
