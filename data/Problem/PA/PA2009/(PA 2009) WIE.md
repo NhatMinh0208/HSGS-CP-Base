@@ -13,6 +13,7 @@ Byteman là đội trưởng đội tìm kiếm các mỏ dầu thô. Anh khoan 
 	- Tuy nhiên độ phức tạp của thuật toán này là $O(n ^ 3)$. Ta cần tìm cách tối ưu thuật toán. 
 	- $dp_{l, r} \le dp_{l - 1, r}, dp_{l, r} \le dp_{l, r + 1}$ với mọi l, r
 	-  Ta fix l và m. Với những r nào $dp_{l, m - 1} \ge dp_{m, r}$? Vì $dp_{m, m} \le dp_{m, m + 1} \le dp_{m, m + 2} ... \le dp_{m, n}$ nên tồn tại số $R_{l, m}$ thỏa mãn $dp_{l, m - 1}  = max(dp_{l, m - 1}, dp_{m, r})$ với mọi $m \le r \le R_{l, m}$ và $dp_{l, m - 1} < dp_{m, r}$ với mọi $R_{l, m} < r \le n$.
-	-  $R_{l, m} \le R_{l, m + 1} \le R_{l, m + 2} \le ...$. 
+	-  $R_{l, m} \le R_{l, m + 1} \le R_{l, m + 2} \le ... \le R_{l, n}$. 
+	
 **Độ phức tạp**: $O(n^2)$ 
-**Link** [[DP optimization]] [[DP]]
+**Link** [[DP optimization]] [[DP]][[Stack]][[Data structure]]
