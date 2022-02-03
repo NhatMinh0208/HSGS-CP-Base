@@ -7,8 +7,8 @@ $$\begin{matrix} *1 & *5 & 3 & 1 & 5 \\ 4 & 2 & *2 & *4 & *3 \end{matrix}$$
  Có bao nhiêu cách tô màu như thế?
  ** Giới hạn** $n \le 100$
  ** Lời giải** 
- - Giả sử ta tô ô (1, 1) bằng màu trắng. Như vậy ô (2, 1) cùng cột phải có màu xám. Giả sử ô (1, 4) có cùng số với ô (2, 1), ô này phải có màu trắng => ô (2, 4) phải có màu xám...
- - Coi các số ghi trong bảng là đỉnh và nối cạnh giữa hai số ghi trong hai ô cùng cột, ta thu được một đồ thị gồm các cycle (do mỗi số xuất hiện ở hai ô không cùng cột, nên nó kề với hai cạnh). Nếu ta tô ô có chứa số i bằng một màu, ta cũng đã quy định màu cho tất cả các ô có đỉnh tương ứng nằm cùng cycle với i. Như vậy mỗi cycle chỉ có 2 cách tô màu.
- - Vậy đáp án là $2 ^ {số cycle}$
+ Giả sử ta tô ô (1, 1) bằng màu trắng. Như vậy ô (2, 1) cùng cột phải có màu xám. Giả sử ô (1, 4) có cùng số với ô (2, 1), ô này phải có màu trắng => ô (2, 4) phải có màu xám...
+ Coi các số ghi trong bảng là đỉnh và nối cạnh giữa hai số ghi trong hai ô cùng cột, ta thu được một đồ thị gồm các cycle (do mỗi số xuất hiện ở hai ô không cùng cột, nên nó kề với hai cạnh). Nếu ta tô ô có chứa số i bằng một màu, ta cũng đã quy định màu cho tất cả các ô có đỉnh tương ứng nằm cùng cycle với i. Như vậy mỗi cycle chỉ có 2 cách tô màu.
+ Vậy đáp án là $2 ^ {số cycle}$
 **ĐPT**: O(n)
 Link: [[Permutation]][[Graph]]
