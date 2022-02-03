@@ -13,11 +13,8 @@ Nhìn constraint ta đoán được sol dp: $dp_{l, r}$ là thời gian tối th
 	$dp_{l, r} = min(\{max(dp_{l, m - 1}, dp_{m, r}) + t_m\})$	với $l + 1 \le m \le r)$
 	
 Tuy nhiên độ phức tạp của thuật toán này là $O(n ^ 3)$. Ta cần tìm cách tối ưu thuật toán. 
-
-$dp_{l, r} \le dp_{l - 1, r}, dp_{l, r} \le dp_{l, r + 1}$ với mọi l, r
-
-Ta fix l và m. Với những r nào $dp_{l, m - 1} \ge dp_{m, r}$? Vì $dp_{m, m} \le dp_{m, m + 1} \le dp_{m, m + 2} ... \le dp_{m, n}$ nên tồn tại số $R_{l, m}$ thỏa mãn $dp_{l, m - 1}  = max(dp_{l, m - 1}, dp_{m, r})$ với mọi $m \le r \le R_{l, m}$ và $dp_{l, m - 1} < dp_{m, r}$ với mọi $R_{l, m} < r \le n$.
-$R_{l, m} \le R_{l, m + 1} \le R_{l, m + 2} \le ... \le R_{l, n}$. 
+Trước tiên đặt $dp_{i, j} = 0$ nếu $i = j$ và $= MAX$ nếu $i \neq j$. Sau đó ta sort lại các đoạn $l, r$ theo $r - l$ và tính dần lên:
+Fix l và m. Ta thực hiện update $dp_{l, r} = min(dp_{l, r}, dp_{l, m - 1} + t_m)$ với  $r$ thỏa mãn $dp_{m, r} \le dp_{l, m - 1}$. Vì $dp_{m, r}$ tăng dần khi r tăng, ta có thể thấy các $r$ thỏa mãn điều kiện trên nằm trong 1 khoảng liên tiếp. Như vậy ta đã có sol $n^2log$ bằng segtree / sparse table. Tuy nhiên cách làm này có thể tối ưu thêm bằng nhận xét rằng các khoảng update tăng dần $(L_i <= L_{i + 1}, R_i <= R_{i + 1})$ nên có thể update bằng stack. 
 	
 **Độ phức tạp**: $O(n^2)$ 
 **Link** [[DP optimization]] [[DP]][[Stack]][[Data structure]]
